@@ -1,0 +1,225 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  line-height: 2;
+  text-align: center;
+}
+
+.pattern-top-mobile {
+  position: absolute;
+  top: -5%;
+  left: 2%;
+}
+
+/********************* SECTION-1 START **********************/
+
+.section-1 {
+  margin-top: 6rem;
+  position: relative;
+}
+
+/* ABOUT */
+
+.about h1 {
+  font-size: 2.75rem;
+  margin: auto;
+  line-height: 1;
+  width: 70%;
+}
+
+.about p {
+  color: #a55a8f;
+  font-size: 12px;
+  margin: 20px auto;
+  width: 74%;
+}
+
+/* RATINGS */
+
+.rating-box {
+  background-color: #f7f2f8;
+  border-radius: 5px;
+  margin: 0px auto 15px auto;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  width: 80%;
+}
+
+/* TESTIMONIALS */
+
+.testimonials {
+  margin: 32px auto;
+}
+
+.testimonial-box {
+  background-color: #511f50;
+  border-radius: 8px;
+  margin: 20px auto;
+  padding: 30px 20px;
+  width: 80%;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.user img {
+  border-radius: 50%;
+  margin-right: 20px;
+  width: 50px;
+}
+
+.user h3 {
+  color: #f6eaf6;
+}
+
+.user p {
+  color: #a55a8f;
+  font-size: 12px;
+}
+
+.user-feedback p {
+  color: #f6eaf6;
+  font-size: 12px;
+  text-align: left;
+}
+
+.pattern-btm-mobile {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/********************* SECTION-1 END **********************/
+/********************* MEDIA-QUERIES **********************/
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .rating-box {
+    width: 60%;
+  }
+
+  .testimonial-box {
+    width: 60%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .section-1 {
+    margin-top: 8rem;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  /* ABOUT */
+  .about {
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+  }
+
+  .about h1 {
+    width: 50%;
+    margin: 0px 8rem;
+  }
+
+  .about p {
+    font-size: 13px;
+    line-height: 2;
+    width: 80%;
+    margin: 16px 8rem;
+  }
+
+  /* RATINGS */
+  .ratings {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .rating-box {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 15px;
+  }
+
+  /* TESTIMONIALS */
+  .testimonials {
+    margin: 7rem auto;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .about h1 {
+    font-size: 38px;
+    width: 60%;
+  }
+
+  .rating-box:nth-child(1) {
+    margin-right: 9.5rem;
+  }
+
+  .rating-box:nth-child(2) {
+    margin-right: 6.5rem;
+  }
+
+  .rating-box:nth-child(3) {
+    margin-right: 3.5rem;
+  }
+
+  /* TESTIMONIALS */
+  .testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 0px 8rem;
+  }
+
+  .testimonial-box {
+    width: 30%;
+    margin: 20px 0;
+  }
+
+  .testimonial-box:nth-child(1) {
+    margin-top: 2rem;
+  }
+
+  .testimonial-box:nth-child(2) {
+    margin-top: 6rem;
+  }
+
+  .testimonial-box:nth-child(3) {
+    margin-top: 9rem;
+  }
+}
